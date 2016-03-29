@@ -2,6 +2,10 @@ jQuery(document).ready(function () {
 
   $(document).foundation();
 
+  $('.sidebar a').click(function () {
+    $('.sidebar').foundation('close');
+  });
+
   var setContactState = function (state) {
 
     switch (state) {

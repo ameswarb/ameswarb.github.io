@@ -5,7 +5,7 @@
 @include foundation-everything;
 
 // debug
-
+//
 // @media #{$medium-up} {
 //   .header { background: #990 !important; }
 // }
@@ -359,11 +359,11 @@ body {
       width: 100%;
 
       .status {
-        margin-left: 27%;
+        margin-left: 20%;
       }
 
       .social {
-        margin-right: 27%;
+        margin-right: 20%;
       }
     }
   }
@@ -500,7 +500,6 @@ body {
 }
 
 @media #{$large-up} {
-
   .contact {
     padding-top: 20px;
 
@@ -512,6 +511,73 @@ body {
 
 // /contact
 
+// footer
+
 .footer {
-  
+  background: url('../images/dirty_old_shirt.png') $grey center center repeat;
+  color: $off-white;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 0 0;
+
+  a {
+    color: $aqua;
+
+    &:hover {
+      color: $tang;
+    }
+  }
+
+  div {
+    padding-bottom: 20px;
+  }
+}
+
+@media #{$medium-up} {
+  .footer {
+    padding-top: 20px;
+  }
+}
+
+// /footer
+
+// sidebar
+
+.off-canvas-wrapper {
+  background: url('../images/dirty_old_shirt.png') $grey center center repeat;
+}
+
+.sidebar {
+  background: transparent;
+  color: $off-white;
+
+  ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    display: block;
+    width: 100%;
+  }
+
+  a {
+    color: $aqua;
+    border-bottom: 1px solid $grey;
+    border-top: 1px solid transparent;
+    display: block;
+    padding: 10px 0;
+    text-indent: 20px;
+    width: 100%;
+
+    &:hover {
+      color: $tang;
+      background: rgba(0, 151, 153, 0.3);
+      border-bottom: 1px solid $dark-aqua;
+      border-top: 1px solid $dark-aqua;
+    }
+  }
 }

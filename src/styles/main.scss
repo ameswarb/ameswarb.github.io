@@ -320,10 +320,6 @@ body {
 }
 
 @media #{$xlarge-up} {
-  h3 {
-    padding-left: 40px;
-  }
-
   .hero {
     background-position: center 13%;
     padding: 0% 0 0;
@@ -343,7 +339,6 @@ body {
     .tagline {
       font-size: 48px;
       line-height: 60px;
-      margin-left: 35px;
 
       br {
         display: none;

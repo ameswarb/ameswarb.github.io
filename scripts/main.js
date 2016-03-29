@@ -51,12 +51,11 @@ jQuery(document).ready(function () {
 
     if ($('#contact-form *[data-invalid]').length < 1) {
       setContactState('loading');
-
       $.ajax({
         url: '//formspree.io/hi@alexmeswarb.com',
         type: 'post',
         dataType: 'json',
-        data: $('.contact.form form').serialize(),
+        data: $('#contact-form').serialize(),
 
         success: function () {
           setContactState('success');
